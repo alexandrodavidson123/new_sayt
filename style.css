@@ -1,0 +1,569 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+/*
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}*/
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex
+;
+    align-items: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/Preloader.module.css">._preloader_1v7l5_1 {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: #fff;
+  z-index: 9999;
+  display: flex; justify-content: center; align-items: center;
+}
+._loader_1v7l5_8 {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px; height: 50px;
+  animation: _spin_1v7l5_1 2s linear infinite;
+}
+@keyframes _spin_1v7l5_1 {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/SignupModal.module.css">._modal_13xny_1 {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+._modalContent_13xny_11 {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  width: 400px;
+  position: relative;
+}
+._close_13xny_19 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+._close_13xny_19:hover {
+  color: #000;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #007BFF;
+}
+._buttonokno_13xny_49 {
+  background-color: #3D1EDD;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+._buttonokno_13xny_49:hover {
+  background-color: #2b0f9e;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/LoginModal.module.css">._modal_13xny_1 {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0; width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+._modalContent_13xny_11 {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  width: 400px;
+  position: relative;
+}
+._close_13xny_19 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+._close_13xny_19:hover {
+  color: #000;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #007BFF;
+}
+._buttonokno_13xny_49 {
+  background-color: #3D1EDD;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+._buttonokno_13xny_49:hover {
+  background-color: #2b0f9e;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/Header.module.css">._header_1neb4_1 {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+._container_1neb4_7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+._logo_1neb4_16 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+._nav_1neb4_21 {
+  display: flex;
+  align-items: center; /* Выравниваем элементы по вертикали */
+  gap: 15px; /* Отступы между элементами */
+}
+
+._forRecruiters_1neb4_27 {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Кнопка Sign Up */
+._buttonjoin_1neb4_36 {
+  background-color: #3D1EDD;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+._buttonjoin_1neb4_36:hover {
+  background-color: #2b0f9e;
+}
+
+/* Кнопка Log In и Log Out */
+._login_1neb4_53, ._logout_1neb4_53 {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #3D1EDD;           /* синий цвет текста */
+  background-color: transparent;
+  border: 2px solid #3D1EDD; /* синяя обводка */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._login_1neb4_53:hover, ._logout_1neb4_53:hover {
+  background-color: #3D1EDD;
+  color: #fff;
+}
+
+/* Приветствие "Привет, Имя" */
+._greeting_1neb4_75 {
+  color: #3D1EDD;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid transparent; /* Чтобы размер совпадал с кнопками */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  user-select: none; /* Чтобы нельзя было выделить текст */
+  cursor: default;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/Footer.module.css">
+
+._footer_16o5x_3 {
+  background-color: #fff;
+  color: #333;
+  padding: 20px 0;
+}
+._foot_all_16o5x_8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+._footer__right_16o5x_13 {
+  padding-left: 18%;
+  text-align: right;
+}
+._footer__text_16o5x_17 {
+  text-align: left;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+._footer__text_16o5x_17:nth-child(2) {
+  font-size: 14px;
+  color: #aaa;
+}
+._foot_left_16o5x_27 {
+  margin-top: 5%;
+  margin-right: 17%;
+}
+._footer__link_16o5x_31 {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+._footer__link_16o5x_31:hover {
+  color: #aaa;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/HeroSection.module.css">
+._hero_1hn8x_2 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+._hero_1hn8x_2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+._container_1hn8x_10 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+._buttonjoin_1hn8x_15 {
+  background-color: #3D1EDD;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+._buttonjoin_1hn8x_15:hover {
+  background-color: #2b0f9e;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/SliderSection.module.css">
+._bloktem_s04p9_2 {
+  position: relative;
+  height: 600px;
+  background-color: black;
+  margin-top: 50px;
+}
+._slider_s04p9_8 {
+  position: relative;
+  height: 100%;
+}
+._heroImage_s04p9_12 {
+
+  width: 160%;
+  height: 600px;
+
+}
+._active_s04p9_22 {
+  opacity: 1;
+}
+._prev_s04p9_25, ._next_s04p9_25 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  z-index: 2;
+}
+._prev_s04p9_25 { left: 10px; }
+._next_s04p9_25 { right: 10px; }</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/QuoteSection.module.css">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+._container_1lyfa_13 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+._quote_1lyfa_19 {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  text-align: center;
+}
+._quote_1lyfa_19 ._blockquote_1lyfa_24{
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+
+}
+._container_1lyfa_13 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+._images_1lyfa_35 {
+  align-items: center;
+  margin-top: 50px;
+}
+._img_dop1_1lyfa_39 {
+  width: 70px;
+  margin-left: -300px;
+}
+._img_dop2_1lyfa_43 {
+  width: 70px;
+  margin-left: 210px;
+}
+._author_1lyfa_47 h4 {
+  margin: 0;
+}
+._author_1lyfa_47 p {
+  margin: 0;
+  color: #888;
+}
+h1{
+  font-size: 1.7rem;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/InfoSection.module.css">
+._info_wjump_2 {
+  padding: 60px 0;
+  text-align: center;
+}
+._container_wjump_6 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+._infoImage_wjump_11 {
+  width: 100%;
+  /*max-width: 400px;*/
+  margin: 30px auto;
+  display: block;
+}
+._features_wjump_17 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+._feature_wjump_17 {
+  width: 30%;
+  text-align: left;
+  margin: 20px;
+}
+._thickLine_wjump_27 {
+  border: none;
+  height: 5px;
+  background-color: #007BFF;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+._feature_wjump_17:hover ._thickLine_wjump_27 {
+  background-color: #0056b3;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/ConnectSection.module.css">
+._connect_1ubjd_2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+._container_1ubjd_6 {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+._connectImage_1ubjd_13 {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10%;
+}
+._connectText_1ubjd_18 {
+  max-width: 600px;
+}
+._connectText_1ubjd_18 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+._connectText_1ubjd_18 p {
+  font-size: 18px;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/assets/styles/CtaSection.module.css">
+._cta_1bcj5_2 {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  margin-top: 40px;
+}
+._container_1bcj5_8 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+._textContainer_1bcj5_16 {
+  max-width: 400px;
+}
+._cta_1bcj5_2 h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+._ctaButton_1bcj5_23 {
+  background-color: #3D1EDD;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+._ctaButton_1bcj5_23:hover {
+  background-color: #2b0f9e;
+}
+._ctaImage_1bcj5_34 {
+  max-width: 100%;
+  height: auto;
+}</style><style type="text/css" data-vite-dev-id="/workspaces/react3/src/pages/CardsPage.module.css">._container_1plrw_1 {
+  max-width: 1200px;      /* Максимальная ширина контента */
+  margin: 0 auto;         /* Центрирование по горизонтали */
+  padding: 0 20px;        /* Отступы слева и справа */
+}
+
+._cardsGrid_1plrw_7 {
+  display: grid;
+  display:flex;
+  gap: 20px;              /* Отступы между карточками */
+  margin-top: 20px;
+}
